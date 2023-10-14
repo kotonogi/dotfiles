@@ -34,8 +34,8 @@
 
 ## clone dotfiles
 ```
-$ git clone https://github.com/kyoh86/dotfiles ~/Projects/github.com/kotonogi/dotfiles
-$ ln -s "$HOME/Projects/github.com/kyoh86/dotfiles" "$HOME/.config"
+$ git clone https://github.com/kotonogi/dotfiles ~/Projects/github.com/kotonogi/dotfiles
+$ ln -s "$HOME/Projects/github.com/kotonogi/dotfiles" "$HOME/.config"
 ```
 
 
