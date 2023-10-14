@@ -1,0 +1,31 @@
+sudo apt-get update
+sudo apt-get install build-essential curl file git
+
+# -------- brew --------
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# -------- python --------
+brew install python
+
+# -------- fish --------
+brew install fish
+fish -c "fish_add_path $HOMEBREW_PREFIX/bin"
+# fisherのインストール
+curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+# テーマのインストール
+fisher install oh-my-fish/theme-bobthefish
+
+# -------- nodebrew --------
+brew  install nodebrew
+nodebrew setup
+fish -c "fish_add_path $$HOME/.nodebrew/current/bin"
+nodebrew install stable
+nodebrew use stable
+npm install -g npm
+
+
+# -------- neovim --------
+brew install neovim
+
+# -------- pypoetry --------
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
