@@ -1,5 +1,9 @@
 sudo apt-get update
 sudo apt-get install build-essential curl file git
+sudo apt-get install keychain
+
+# -------- keychain --------
+/usr/bin/keychain -q --nogui $HOME/.ssh/github_ed25519
 
 # -------- brew --------
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
